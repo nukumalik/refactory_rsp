@@ -1,13 +1,14 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 
 import css from './.module.scss'
 import { Navbar, FooterCourse, CardCourse } from '../../../components'
-import { fetchList } from '../../../store/Courses/actions'
 
 const CourseList = () => {
   // Global Variables
-  const { list, isLoading } = useSelector(state => state.Courses)
+  const { list } = useSelector(state => state.Courses)
+  const history = useHistory()
 
   return (
     <div className={css.wrapper}>
@@ -26,6 +27,7 @@ const CourseList = () => {
               description={item?.short_description}
               userImage={item?.user?.photo_url}
               userName={item?.user?.name}
+              onClick={() => history.push('/courses/detail')}
             />
           ))}
         </div>

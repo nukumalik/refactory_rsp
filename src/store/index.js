@@ -5,9 +5,10 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 // Reducers
 import Home from './Home/reducer'
 import Courses from './Courses/reducer'
+import Login from './Login/reducer'
 
 // Root Reducer
-const rootReducer = combineReducers({ Home, Courses })
+const rootReducer = combineReducers({ Home, Courses, Login })
 const composeEnhacers = composeWithDevTools({})
 
 export default process.env.NODE_ENV === 'production'

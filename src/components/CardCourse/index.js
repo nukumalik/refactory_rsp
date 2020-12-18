@@ -3,9 +3,16 @@ import PropTypes from 'prop-types'
 
 import css from './.module.scss'
 
-const CardCourse = ({ image, title, description, userImage, userName }) => {
+const CardCourse = ({
+  image,
+  title,
+  description,
+  userImage,
+  userName,
+  onClick,
+}) => {
   return (
-    <div className={css.wrapper}>
+    <div className={css.wrapper} onClick={onClick}>
       <div
         className={css.image}
         style={{ backgroundImage: `url(${image})` }}
@@ -32,6 +39,7 @@ CardCourse.defaultProps = {
   title: '',
   userImage: '',
   userName: '',
+  onClick: () => {},
 }
 
 CardCourse.propTypes = {
@@ -40,6 +48,7 @@ CardCourse.propTypes = {
   title: PropTypes.string,
   userImage: PropTypes.string,
   userName: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default CardCourse

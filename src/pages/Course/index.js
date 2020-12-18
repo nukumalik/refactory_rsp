@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 
 import css from './.module.scss'
 import { Header, Button, Footer, CardReview } from '../../components'
@@ -9,6 +10,7 @@ import { fetchData } from '../../store/Courses/actions'
 const Course = () => {
   // Global variables
   const dispatch = useDispatch()
+  const history = useHistory()
   const { data, isLoading } = useSelector(state => state.Courses)
 
   // Hooks
@@ -30,10 +32,16 @@ const Course = () => {
               ready to boost your career.
             </p>
             <div className="d-flex">
-              <Button label="Masuk & Mulai Belajar" onClick={() => {}} />
+              <Button
+                label="Masuk & Mulai Belajar"
+                onClick={() => history.push('/courses/list')}
+              />
               <Button
                 label="Daftar Sekarang"
-                onClick={() => {}}
+                onClick={() =>
+                  (location.href =
+                    'https://enroll.refactory.id/?_ga=2.208342546.1265760339.1608116370-1857986742.1608116370')
+                }
                 type="secondary"
               />
             </div>
@@ -48,7 +56,13 @@ const Course = () => {
                 Bagaimana Refactory Course membantu{' '}
                 <span>meningkatkan skill</span> anda.
               </h1>
-              <Button label="Pelajari Lebih" onClick={() => {}} />
+              <Button
+                label="Pelajari Lebih"
+                onClick={() =>
+                  (location.href =
+                    'https://enroll.refactory.id/?_ga=2.208342546.1265760339.1608116370-1857986742.1608116370')
+                }
+              />
             </div>
             <img alt="advantage" src={IMAGES.COURSE_ADVANTAGE} />
           </div>

@@ -32,7 +32,7 @@ const Header = ({ children, bgImage }) => {
   useEffect(() => {
     setCurrentMenu(location.pathname)
 
-    if (location?.pathname?.includes(currentMenu)) {
+    if (location?.pathname === currentMenu) {
       setMenus(
         menus.map(menu =>
           menu?.path === currentMenu ? { ...menu, isActive: true } : menu
@@ -99,10 +99,18 @@ const Header = ({ children, bgImage }) => {
                 bisnis perusahaan Anda.
               </p>
               <div className="d-flex">
-                <Button label="Temukan Solusi Anda" onClick={() => {}} />
+                <Button
+                  label="Temukan Solusi Anda"
+                  onClick={() =>
+                    (location.href = 'https://refactory.id/contact/')
+                  }
+                />
                 <Button
                   label="tingkatkan Skill Anda"
-                  onClick={() => {}}
+                  onClick={() =>
+                    (location.href =
+                      'https://enroll.refactory.id/?_ga=2.250269574.1265760339.1608116370-1857986742.1608116370')
+                  }
                   type="secondary"
                 />
               </div>

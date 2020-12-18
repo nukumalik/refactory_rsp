@@ -40,7 +40,7 @@ const Footer = () => {
                   target="__blank"
                   className={css.social_icon}
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <i className="fab fa-youtube"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/refactory.id/"
