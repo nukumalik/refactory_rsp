@@ -18,7 +18,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "redux-devtools-extension": "^2.13.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,8 +47,7 @@
   },
   "devDependencies": {
     "react-app-rewire-alias": "^0.1.9",
-    "react-app-rewired": "^2.1.8",
-    "redux-devtools-extension": "^2.13.8"
+    "react-app-rewired": "^2.1.8"
   },
   "engines": {
     "node": "14.15.2"
