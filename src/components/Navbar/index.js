@@ -21,14 +21,16 @@ const Navbar = () => {
         <Link to="/" className="navbar-brand">
           <img alt="refactory" src={IMAGES.REFACTORY} />
         </Link>
-        <button
-          type="button"
-          className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#NavbarMenu"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        {!location.pathname.includes('login') && (
+          <button
+            type="button"
+            className="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#NavbarMenu"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        )}
 
         {!location.pathname.includes('login') && (
           <div className="collapse navbar-collapse" id="NavbarMenu">
