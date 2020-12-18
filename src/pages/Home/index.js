@@ -56,7 +56,7 @@ const Home = () => {
       <Insight title="INSIGHT TERBARU" subtitle="Knowledge Sharing" />
 
       <div className="text-center pt-5 pb-5 mb-3">
-        <Link to="/blog">
+        <Link to="/">
           Lihat Semua <i className="fas fa-arrow-right"></i>
         </Link>
       </div>

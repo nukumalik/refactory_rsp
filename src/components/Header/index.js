@@ -17,7 +17,7 @@ const Header = ({ children, bgImage }) => {
   const [menus, setMenus] = useState([
     { label: 'Home', path: '/', isActive: false },
     { label: 'Courses', path: '/courses', isActive: false },
-    { label: 'Blog', path: '/blog', isActive: false },
+    { label: 'Blog', path: '/', isActive: false },
   ])
 
   // Global Variable

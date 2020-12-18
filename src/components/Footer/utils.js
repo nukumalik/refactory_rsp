@@ -7,7 +7,7 @@ export const sitemapMenus = [
   },
   { label: 'Courses', link: '/courses' },
   { label: 'Custom Trainings', link: 'https://refactory.id/custom-trainings/' },
-  { label: 'Blog', link: '/blog' },
+  { label: 'Blog', link: '/' },
 ]
 
 export const companyMenus = [
