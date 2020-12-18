@@ -1,0 +1,78 @@
+.help {
+  padding: 50px 0;
+  h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 42px;
+    font-family: 'Raleway', sans-serif;
+    color: #0b162b;
+    margin: 50px auto;
+  }
+}
+
+.card_help {
+  text-align: center;
+
+  img {
+    margin: 20px auto;
+  }
+
+  h3 {
+    color: #0b162b;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: rgba(11, 22, 43, 0.6);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.see_on {
+  background-color: #f4f5f6;
+  text-align: center;
+  padding: 70px 0;
+
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #0b162b;
+    letter-spacing: 2px;
+  }
+
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 152.66px;
+      margin: 20px;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      float: left;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+      }
+    }
+  }
+}

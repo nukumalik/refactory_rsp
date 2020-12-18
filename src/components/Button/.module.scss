@@ -1,0 +1,28 @@
+.wrapper {
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #e48800;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: fit-content;
+  padding: 6px 45px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid #e48800;
+
+    &:hover {
+      background-color: #e48800;
+    }
+  }
+}

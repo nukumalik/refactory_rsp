@@ -1,0 +1,10 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.course_list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 30px;
+}

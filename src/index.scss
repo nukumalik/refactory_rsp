@@ -1,0 +1,26 @@
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 0 15px;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    color: #e48800 !important;
+  }
+
+  &.active {
+    color: #e48800 !important;
+  }
+}
+
+a {
+  transition: 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    color: #e48800;
+  }
+}
