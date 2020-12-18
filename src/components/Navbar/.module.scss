@@ -3,6 +3,10 @@
   background-image: linear-gradient(90deg, #2852a2 21.72%, #35b4ae 75.43%);
   padding: 0;
 
+  @media (max-width: 767px) {
+    padding: 20px 10px;
+  }
+
   li {
     display: flex;
     align-items: center;

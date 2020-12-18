@@ -24,8 +24,8 @@ const Home = () => {
       <div className="container">
         <div className={css.help}>
           <h1>Apa Yang Refactory Datat Bantu</h1>
-          <div className="d-flex justify-content-center">
-            <div className="col-6 mr-lg-3">
+          <div className="d-flex justify-content-center flex-wrap">
+            <div className="col-12 col-md-6 mr-lg-3">
               <div className={css.card_help}>
                 <img alt="approve" src={IMAGES.MATERIAL_APPROVAL} />
                 <h3>Memperkuat Tim Engineer Anda</h3>
@@ -37,7 +37,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-6 ml-lg-3">
+            <div className="col-12 col-md-6 ml-lg-3">
               <div className={css.card_help}>
                 <img alt="approve" src={IMAGES.MATERIAL_BOLT} />
                 <h3>Wujudkan Software Impian Anda</h3>

@@ -85,6 +85,15 @@ h3 {
   color: #36414d;
   margin-bottom: 50px;
 
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+
+    & > div {
+      width: 80%;
+      text-align: center;
+    }
+  }
+
   h1 {
     font-size: 24px;
     font-weight: 700;

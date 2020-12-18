@@ -68,10 +68,16 @@ const Header = ({ children, bgImage }) => {
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse" id="NavbarMenu">
+            <div
+              className={classnames('collapse navbar-collapse', css.collapse)}
+              id="NavbarMenu"
+            >
               <ul className="navbar-nav ml-md-auto">
                 {menus.map(menu => (
-                  <li className="nav-item" key={menu?.label}>
+                  <li
+                    className={classnames('nav-item', css.collapse_td)}
+                    key={menu?.label}
+                  >
                     <Link
                       to={menu?.path}
                       className={`nav-link ${menu?.isActive ? 'active' : ''}`}
